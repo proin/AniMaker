@@ -1,0 +1,282 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/titlebar"
+            android:gravity="center_vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/m01_preview_navibtn_backimg"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/backbtn"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/icon" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/m01_preview_navibtn"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/navi_effect" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/m01_preview_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:maxLength="16"
+                    android:singleLine="true"
+                    android:text="Title"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#FFFFFFFF" />
+
+                <LinearLayout
+                    android:id="@+id/m01_preview_edittitle_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:visibility="gone" >
+
+                    <EditText
+                        android:id="@+id/m01_preview_edittitle"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:visibility="visible" />
+
+                    <RelativeLayout
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" >
+
+                        <ImageButton
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/accept" />
+
+                        <ImageButton
+                            android:id="@+id/m01_preview_edittitlecheckbtn"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:background="@drawable/navi_effect" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" >
+
+                    <ImageButton
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/deletebtn" />
+
+                    <ImageButton
+                        android:id="@+id/m01_preview_deletebtn"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/navi_effect" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" >
+
+                    <ImageButton
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/editbtn" />
+
+                    <ImageButton
+                        android:id="@+id/m01_preview_editbtn"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/navi_effect" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" >
+
+                    <ImageButton
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/settingbtn" />
+
+                    <ImageButton
+                        android:id="@+id/m01_preview_settingbtn"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/navi_effect" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:background="#FFABABAB"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FF000000" >
+
+                <ImageView
+                    android:id="@+id/m01_preview_ImageView_video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="#FFFFFFFF"
+                    android:src="@drawable/ic_launcher" />
+
+                <ImageButton
+                    android:id="@+id/m01_preview_ImageButton_playvideo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:src="@android:drawable/ic_media_play" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:visibility="visible" >
+
+                <SeekBar
+                    android:id="@+id/m01_preview_SeekBar_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/m01_preview_TextView_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="1:00" />
+
+                <ImageButton
+                    android:id="@+id/m01_preview_ImageButton_pausevideo"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@android:drawable/ic_media_pause"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/contents"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/m01_preview_TextView_detail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="15dp"
+                    android:text="Detail introduction" />
+
+                <LinearLayout
+                    android:id="@+id/m01_preview_editdetail_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="15dp"
+                    android:gravity="right"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="right" >
+
+                        <RelativeLayout
+                            android:layout_width="40dp"
+                            android:layout_height="40dp" >
+
+                            <ImageButton
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/accept" />
+
+                            <ImageButton
+                                android:id="@+id/m01_preview_editdetailcheckbtn"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:background="@drawable/navi_effect" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/m01_preview_editdetail"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="top"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

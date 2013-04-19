@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_gravity="center_vertical"
+    android:layout_height="60dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp" 
+        android:gravity="center">
+
+    <Button
+        android:id="@+id/m00_01_addfooter_addbtn"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#00FFFFFF"
+        android:onClick="ADD_LIST_VIEW_ONCLICK"
+        android:text="추가"
+        android:textSize="18sp" />
+
+    </RelativeLayout>
+    	
+</LinearLayout>

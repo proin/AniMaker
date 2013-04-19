@@ -1,0 +1,344 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/sketchbg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarDefaultDelayBeforeFade="5000000" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/canvas_back"
+                            android:visibility="visible" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/icon" />
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:id="@+id/m03_canvas_ImageButton_exit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/navi_effect" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp" >
+
+                    <ImageButton
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/canvas_editbtn" />
+
+                    <ImageButton
+                        android:id="@+id/m03_canvas_ImageButton_penstyle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/navi" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp" >
+
+                    <ImageButton
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/canvas_pages" />
+
+                    <ImageButton
+                        android:id="@+id/m03_canvas_ImageButton_pagelist"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/navi" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:visibility="gone" >
+
+                    <ImageButton
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/canvas_playbtn" />
+
+                    <ImageButton
+                        android:id="@+id/m03_canvas_ImageButton_play"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/navi" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp" >
+
+                    <ImageButton
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/canvas_setbg" />
+
+                    <ImageButton
+                        android:id="@+id/m03_canvas_ImageButton_SetBG"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/navi" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/m03_canvas_textview_pagenavi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="0" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="9" >
+
+        <ImageView
+            android:id="@+id/m03_canvas_ImageView_CanvasBG"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <ImageView
+            android:id="@+id/m03_canvas_ImageView_Play"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/m03_canvas_Layout_workspace"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/m03_canvas_Layout_PenSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/canvas_pen_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageButton
+                    android:id="@+id/m03_canvas_Pensetting_exit"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/canclebtn" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center" >
+
+                    <ImageButton
+                        android:id="@+id/m03_canvas_ImageButton_penstyle_pen"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/pensetting_icon_pen_unselect" />
+
+                    <ImageButton
+                        android:id="@+id/m03_canvas_ImageButton_penstyle_marker"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/pensetting_icon_neon_unselect" />
+
+                    <ImageButton
+                        android:id="@+id/m03_canvas_ImageButton_penstyle_eraser"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/pensetting_icon_eraser_unselect" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="310dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <SeekBar
+                    android:id="@+id/m03_canvas_SeekBar_width"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:max="72" />
+
+                <RelativeLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp" >
+
+                    <ImageView
+                        android:id="@+id/m03_canvas_ImageView_Circle"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/m01_canvas_circle" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/m03_canvas_TextView_widthsize"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/m03_canvas_Layout_colorlist"
+                android:layout_width="310dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/m03_canvas_Layout_PageList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/canvas_pen_bg"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right" >
+
+                <RelativeLayout
+                    android:id="@+id/m03_canvas_PageList_Button_Layout"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" >
+
+                    <ImageButton
+                        android:id="@+id/m03_canvas_PageList_addpage_img"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/canvas_pages" />
+
+                    <ImageButton
+                        android:id="@+id/m03_canvas_PageList_addpage"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/navi_effect" />
+                </RelativeLayout>
+
+                <ImageButton
+                    android:id="@+id/m03_canvas_PageList_exit"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/canclebtn" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/m03_canvas_PageList_Layout_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/m03_canvas_PageList_Layout_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <ImageButton
+                    android:id="@+id/m03_canvas_PageList_navi_pre"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/videorewind" />
+
+                <TextView
+                    android:id="@+id/m03_canvas_PageList_navitxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="1 / 1" />
+
+                <ImageButton
+                    android:id="@+id/m03_canvas_PageList_navinext"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/videoforward" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
